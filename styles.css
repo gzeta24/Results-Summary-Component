@@ -1,0 +1,180 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: white;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 20px 60px 20px rgba(0, 0, 0, 0.123);
+    border-radius: 30px;
+}
+.card-left, .card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 31.25em; /* 500 px*/
+    border-radius: 30px;
+    justify-content: flex-start;
+}
+
+/* LEFT CARD */
+
+.card-left {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    width: 21.875em;
+}
+.card-left-your-result {
+    color:hsla(255, 100%, 90%, 100%);
+    font-size: x-large;
+    font-weight: 500;
+    padding: 20px;
+}
+.card-left-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(252, 100%, 20%, 20%);
+    width: 11.875em;
+    height: 11.875em;
+    border-radius: 100%;
+    margin-top: -10px;
+}
+.card-left-score {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.card-left-max-score {
+    color:hsla(255, 100%, 100%, 40%);
+    font-size: 18px;
+    margin-top: 0px;
+}
+.card-left-result {
+    font-size: 30px;
+    color: hsla(255, 100%, 97%, 100%);
+}
+.card-left-description {
+    text-align: center;
+    margin-top: -14px;
+    margin-left: 52px;
+    margin-right: 52px;
+    font-size: large;
+    font-weight: 300;
+    color: hsla(255, 100%, 90%, 80%);
+}
+
+/* RIGHT CARD */
+.card-right {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 17.5em;
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;  
+}
+.card-right-summary {
+    color: hsl(224, 30%, 27%);
+    font-size: x-large;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-right-reaction-box, .card-right-memory-box, .card-right-verbal-box, .card-right-visual-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.card-right-reaction-box {
+    background-color: hsla(0, 100%, 67%, 5%);
+    color: hsl(0, 100%, 67%);
+}
+.card-right-memory-box {
+    background-color: hsla(39, 100%, 56%, 5%);
+    color: hsl(39, 100%, 56%);
+}
+.card-right-verbal-box {
+    background-color: hsla(166, 100%, 37%, 5%);
+    color: hsl(166, 100%, 37%);
+}
+.card-right-visual-box {
+    background-color: hsla(234, 85%, 45%, 5%);
+    color: hsl(234, 85%, 45%);
+}
+.card-right-stat-icon {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.card-right-continue-box {
+    display: flex;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.875em;
+    font-size: 16px;
+}
+.card-right-continue-box:hover {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    cursor: pointer;
+}
+.card-right-stat-numbers {
+    color: hsla(224, 30%, 27%, 50%);
+    flex-grow: 2;
+    text-align: right;
+    margin-right: 15px;
+}
+.card-right-stat-value {
+    color: hsl(224, 30%, 27%);
+}
+
+/* MEDIA QUERYS */
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 480px) {
+    .card {
+        flex-direction: column;
+        box-shadow: 0px 0px 0px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-left {
+        height: 23em;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .card-left-your-result {
+        padding: 0px;
+    }
+    .card-left-description {
+        font-size: 16px;
+        width: 80%;
+    }
+    .card-left-circle {
+        height: 10em;
+        width: 10em;
+    }
+    .card-right-continue-box {
+        margin-top: 0.9em;
+    }
+    .card-right-summary {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}  
