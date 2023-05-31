@@ -20,7 +20,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Links
 
 - Solution URL: https://github.com/gzeta24/Results-Summary-Component/
-- Live site:
+- Live site: https://gzeta24.github.io/Results-Summary-Component/
 
 ## My process
 
